@@ -419,17 +419,7 @@ footer {
         <a href="https://github.com/skhalthang4/stephen-khalthang.github.io/blob/main/BMW_KPI_Dashboard.pbix" target="_blank" class="proj-status" style="text-decoration:none; color: var(--gold);">↗ View on GitHub</a>
       </div>
 
-      <div class="proj">
-        <div class="proj-num">03</div>
-        <div class="proj-tag">Excel · FP&amp;A · Planned</div>
-        <div class="proj-name">Month-End Close Simulation Pack</div>
-        <p class="proj-desc">Full month-end close pack for a simulated SME — journal entries, trial balance, P&amp;L, balance sheet, and written variance commentary formatted as a management-ready reporting pack. Mirrors the close process used in real outsourcing and accounting firm environments.</p>
-        <div class="proj-pills">
-          <span class="pill">Management Accounts</span><span class="pill">IFRS</span>
-          <span class="pill">Excel</span><span class="pill">Variance Commentary</span>
-        </div>
-        <span class="proj-status">📋 Coming soon</span>
-      </div>
+
 
     </div>
   </div>
@@ -585,6 +575,16 @@ footer {
   <div class="footer-note">stephen-khalthang.github.io</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const obs = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) =
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('in'), i * 80);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
