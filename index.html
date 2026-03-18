@@ -361,7 +361,7 @@ footer {
     <h1 class="hero-name">Stephen<br><em>Khalthang</em></h1>
     <p class="hero-role">Junior Finance Professional &nbsp;·&nbsp; MSc Accounting &amp; Finance, University of Aberdeen &nbsp;·&nbsp; ACCA Candidate</p>
     <p class="hero-bio">
-      Finance professional with hands-on experience in FP&amp;A, financial modelling, and management reporting. Built a full DCF valuation for Rolls-Royce Holdings from scratch and developing a live Power BI dashboard on Tesco PLC — no templates, no guided inputs.
+      Finance professional with hands-on experience in FP&amp;A, financial modelling, and management reporting. Built a full DCF valuation for Rolls-Royce Holdings from scratch, a 4-page Power BI KPI dashboard analysing €31bn in BMW global sales, and developing a live management reporting dashboard on Tesco PLC — no templates, no guided inputs.
     </p>
     <div class="hero-cta">
       <a href="Stephen_Khalthang_CV.pdf" class="btn-gold" download>Download CV</a>
@@ -382,8 +382,8 @@ footer {
       <div class="metric-lbl">Year-on-year OpEx deviation identified during annual budgeting cycle</div>
     </div>
     <div class="metric-card">
-      <div class="metric-num">4</div>
-      <div class="metric-lbl">Languages — English C1, Hindi C2, Mizo Native, German A1</div>
+      <div class="metric-num">€<span>31</span>bn</div>
+      <div class="metric-lbl">BMW global revenue analysed across 4 regions, 8 models, 2018–2025 — Power BI KPI dashboard</div>
     </div>
   </div>
 </section>
@@ -408,14 +408,15 @@ footer {
 
       <div class="proj">
         <div class="proj-num">02</div>
-        <div class="proj-tag">Power BI · DAX · In Progress</div>
-        <div class="proj-name">Interactive KPI Dashboard — Tesco PLC</div>
-        <p class="proj-desc">Building an interactive management reporting dashboard using Tesco's publicly available financials. Tracks Revenue, Costs, Profit Margins, and Variance vs Budget. Developing dynamic DAX measures for variance and margin metrics, with drill-through filters for multi-period performance exploration.</p>
+        <div class="proj-tag">Power BI · DAX · FP&amp;A · March 2026</div>
+        <div class="proj-name">Global Sales KPI Dashboard — BMW Group</div>
+        <p class="proj-desc">Built a 4-page interactive KPI dashboard analysing €31bn in BMW global revenue across 4 regions and 8 models (2018–2025). Designed a star-schema data model with a DateTable and 6 DAX measures including YoY revenue growth, average selling price, and BEV share tracking. Page 4 surfaces macroeconomic correlations between unit sales, GDP growth, and fuel price index — the kind of driver-based narrative expected in FP&amp;A reporting packs.</p>
         <div class="proj-pills">
           <span class="pill">Power BI</span><span class="pill">DAX</span>
-          <span class="pill">KPI Reporting</span><span class="pill">Data Modelling</span>
+          <span class="pill">Data Modelling</span><span class="pill">YoY Analysis</span>
+          <span class="pill">KPI Reporting</span><span class="pill">EV Analytics</span>
         </div>
-        <span class="proj-status">🔧 In progress — screenshots coming soon</span>
+        <a href="https://github.com/skhalthang4/stephen-khalthang.github.io/blob/main/BMW_KPI_Dashboard.pbix" target="_blank" class="proj-status" style="text-decoration:none; color: var(--gold);">↗ View on GitHub</a>
       </div>
 
       <div class="proj">
@@ -436,7 +437,7 @@ footer {
 
 <div class="highlight-band reveal">
   <div>
-    <p class="hb-quote">"Built a full DCF valuation for Rolls-Royce from scratch — no template, no guided inputs. Six sections, dual terminal value, and a colour-coded sensitivity matrix across WACC and TGR."</p>
+    <p class="hb-quote">"Built a 4-page Power BI KPI dashboard analysing €31bn in BMW global sales — DAX measures, YoY growth, BEV adoption trends, and macroeconomic driver analysis. No templates, no guided inputs."</p>
     <p class="hb-sub">Self-directed project · March 2026</p>
   </div>
   <a href="#projects" class="hb-cta">See Projects</a>
@@ -527,7 +528,7 @@ footer {
         <div class="edu-period">Sep 2025 – Aug 2026 (Expected) · EQF Level 7 · Aberdeen, UK</div>
         <ul class="edu-items">
           <li>Financial Reporting, Corporate Finance, Management Accounting, Auditing</li>
-          <li>Project: Power BI KPI dashboard — Tesco PLC (in progress)</li>
+          <li>Project: BMW Global Sales KPI Dashboard — Power BI, DAX, 4-page FP&amp;A reporting (completed)</li>
           <li>Project: DCF valuation — Rolls-Royce Holdings (self-directed)</li>
           <li>Planning to pursue ACCA qualification post-graduation</li>
         </ul>
@@ -558,9 +559,9 @@ footer {
         </p>
       </div>
       <div class="contact-items reveal">
-        <a href="mailto:skhalthangwork@outlook.com" class="contact-row">
+        <a href="/cdn-cgi/l/email-protection#c4b7afaca5a8b0aca5aaa3b3abb6af84abb1b0a8ababafeaa7aba9" class="contact-row">
           <div class="ci-icon">✉</div>
-          <div><div class="ci-label">Email</div><div class="ci-val">skhalthangwork@outlook.com</div></div>
+          <div><div class="ci-label">Email</div><div class="ci-val"><span class="__cf_email__" data-cfemail="bccfd7d4ddd0c8d4ddd2dbcbd3ced7fcd3c9c8d0d3d3d792dfd3d1">[email&#160;protected]</span></div></div>
         </a>
         <a href="https://linkedin.com/in/stephen-khalthang-1405a5365" target="_blank" class="contact-row">
           <div class="ci-icon">in</div>
@@ -584,16 +585,6 @@ footer {
   <div class="footer-note">stephen-khalthang.github.io</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const obs = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('in'), i * 90);
-      obs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-</script>
-</body>
-</html>
+  entries.forEach((e, i) =
