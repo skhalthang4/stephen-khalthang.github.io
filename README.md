@@ -24,3 +24,9 @@ Power BI Desktop · DAX · Data Modelling · Time Intelligence
 
 ## How to View
 Download `BMW_KPI_Dashboard.pbix` and open in Power BI Desktop
+
+## Screenshots
+![Executive Summary](page1.png)
+![Sales Performance](page2.png)
+![EV Mix](page3.png)
+![Market Context](page4.png)
