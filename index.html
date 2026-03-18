@@ -182,7 +182,7 @@ footer { background: var(--ink); padding: 32px 60px; display: flex; justify-cont
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="cv__3_.pdf" class="nav-cv" download>Download CV</a>
+  <a href="Stephen_Khalthang_CV.pdf" class="nav-cv" download>Download CV</a>
 </nav>
 
 <div style="max-width:1200px;margin:0 auto;">
@@ -194,7 +194,7 @@ footer { background: var(--ink); padding: 32px 60px; display: flex; justify-cont
     <p class="hero-summary">FP&amp;A professional with 1 year of hands-on financial planning experience. Core strength is translating raw data into commercial insight — building 3-statement models, owning budgeting cycles, and delivering management reporting that drives decisions. Identified a 7% YoY cost deviation through variance analysis and cut month-end close time by ~20% through Excel automation.</p>
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="cv__3_.pdf" class="btn-outline" download>Download CV</a>
+      <a href="Stephen_Khalthang_CV.pdf" class="btn-outline" download>Download CV</a>
     </div>
   </div>
   <div class="hero-stats">
@@ -288,8 +288,37 @@ footer { background: var(--ink); padding: 32px 60px; display: flex; justify-cont
         <div class="proj-links">
           <a href="https://github.com/skhalthang4/stephen-khalthang.github.io/blob/main/BMW_KPI_Dashboard.pbix" target="_blank" class="proj-link">↗ View on GitHub</a>
         </div>
+        <div style="margin-top:24px;">
+          <div style="font-family:'DM Mono',monospace;font-size:0.66rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:12px;">Dashboard Preview — click to enlarge</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+            <div style="position:relative;overflow:hidden;border:1px solid var(--line);cursor:pointer;" onclick="openModal('bmw-page1.png','Page 1 — Executive Summary')">
+              <img src="bmw-page1.png" alt="Page 1" style="width:100%;display:block;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+              <div style="position:absolute;bottom:0;left:0;right:0;background:rgba(17,18,16,0.78);padding:8px 12px;font-family:'DM Mono',monospace;font-size:0.62rem;color:#fff;letter-spacing:0.06em;">Page 1 — Executive Summary</div>
+            </div>
+            <div style="position:relative;overflow:hidden;border:1px solid var(--line);cursor:pointer;" onclick="openModal('bmw-page2.png','Page 2 — Sales Performance')">
+              <img src="bmw-page2.png" alt="Page 2" style="width:100%;display:block;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+              <div style="position:absolute;bottom:0;left:0;right:0;background:rgba(17,18,16,0.78);padding:8px 12px;font-family:'DM Mono',monospace;font-size:0.62rem;color:#fff;letter-spacing:0.06em;">Page 2 — Sales Performance</div>
+            </div>
+            <div style="position:relative;overflow:hidden;border:1px solid var(--line);cursor:pointer;" onclick="openModal('bmw-page3.png','Page 3 — EV &amp; Product Mix')">
+              <img src="bmw-page3.png" alt="Page 3" style="width:100%;display:block;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+              <div style="position:absolute;bottom:0;left:0;right:0;background:rgba(17,18,16,0.78);padding:8px 12px;font-family:'DM Mono',monospace;font-size:0.62rem;color:#fff;letter-spacing:0.06em;">Page 3 — EV &amp; Product Mix</div>
+            </div>
+            <div style="position:relative;overflow:hidden;border:1px solid var(--line);cursor:pointer;" onclick="openModal('bmw-page4.png','Page 4 — Market Context')">
+              <img src="bmw-page4.png" alt="Page 4" style="width:100%;display:block;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+              <div style="position:absolute;bottom:0;left:0;right:0;background:rgba(17,18,16,0.78);padding:8px 12px;font-family:'DM Mono',monospace;font-size:0.62rem;color:#fff;letter-spacing:0.06em;">Page 4 — Market Context</div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="proj-status-badge status-done">Completed</div>
+    </div>
+
+    <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(17,18,16,0.92);z-index:9999;align-items:center;justify-content:center;padding:40px;" onclick="closeModal()">
+      <div style="position:relative;max-width:1100px;width:100%;" onclick="event.stopPropagation()">
+        <img id="modal-img" src="" alt="" style="width:100%;display:block;border:1px solid rgba(255,255,255,0.1);"/>
+        <div id="modal-caption" style="font-family:'DM Mono',monospace;font-size:0.72rem;color:rgba(255,255,255,0.5);margin-top:12px;letter-spacing:0.08em;"></div>
+        <div style="position:absolute;top:-16px;right:-16px;width:36px;height:36px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;" onclick="closeModal()">✕</div>
+      </div>
     </div>
 
 
@@ -472,7 +501,7 @@ footer { background: var(--ink); padding: 32px 60px; display: flex; justify-cont
         <div class="ci-icon">gh</div>
         <div><div class="ci-label">GitHub</div><div class="ci-val">skhalthang4 · stephen-khalthang.github.io</div></div>
       </a>
-      <a href="cv__3_.pdf" class="contact-row" download>
+      <a href="Stephen_Khalthang_CV.pdf" class="contact-row" download>
         <div class="ci-icon">↓</div>
         <div><div class="ci-label">CV</div><div class="ci-val">Download PDF</div></div>
       </a>
@@ -495,6 +524,19 @@ const obs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+function openModal(src, caption) {
+  const modal = document.getElementById('modal');
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal-caption').textContent = caption;
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
